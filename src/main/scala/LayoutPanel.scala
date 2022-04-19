@@ -74,7 +74,7 @@ class LayoutPanel extends GridBagPanel{
 
     try discountEntered = discountTextField.text
     catch {
-      case _: NumberFormatException =>
+      case _ =>
     }
 
 
