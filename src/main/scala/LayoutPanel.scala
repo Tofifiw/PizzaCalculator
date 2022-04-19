@@ -1,5 +1,6 @@
 
 import java.awt.Color
+import javax.swing.ImageIcon
 import scala.collection.mutable.ArrayBuffer
 import scala.swing._
 
@@ -57,9 +58,9 @@ class LayoutPanel extends GridBagPanel{
 
   // stamp -------------------------------------
 
-  val stampLabel = new Label
+  val stampLabel = new Label { icon = new ImageIcon("image/pizza.jpeg")}
   stampLabel.font = Font("System", Font.Bold, 28)
-  stampLabel.foreground = Color.black
+  stampLabel.foreground = Color.white
   stampLabel.horizontalTextPosition = Alignment.Center
   stampLabel.text = s"<html>Money to be paid<br>\n$$0</html>"
 
